@@ -1,2 +1,2 @@
 # CoffeeBlog
-Blog with HTML &amp; CSS
+Blog with HTML &amp; SCSS & JS
