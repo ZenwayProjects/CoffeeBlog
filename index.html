@@ -28,7 +28,7 @@
     <link rel="preload" href="./css/style.css" as="style" />
     <link rel="stylesheet" href="./css/style.css" />
 
-    <link rel="preload" href="./img/banner.jpg" as="image" />
+    <link rel="preload" href="./img/banner.webp" as="image" />
 
     <title>Coffee Blog</title>
   </head>
@@ -60,7 +60,10 @@
         <h3>Our Blog</h3>
         <article class="entry">
           <div class="entry__img">
-            <img loading="lazy" src="./img/blog1.jpg" alt="blog image" />
+            <picture>
+              <source srcset="./img/blog1.webp" type="image/webp" />
+              <img loading="lazy" src="./img/blog1.jpg" alt="blog image" />
+            </picture>
           </div>
 
           <div class="entry__content">
@@ -77,7 +80,10 @@
 
         <article class="entry">
           <div class="entry__img">
-            <img loading="lazy" src="./img/blog2.jpg" alt="blog image" />
+            <picture>
+              <source srcset="./img/blog2.webp" type="image/webp" />
+              <img loading="lazy" src="./img/blog2.jpg" alt="blog image" />
+            </picture>
           </div>
 
           <div class="entry__content">
@@ -94,7 +100,10 @@
 
         <article class="entry">
           <div class="entry__img">
-            <img loading="lazy" src="./img/blog3.jpg" alt="blog image" />
+            <picture>
+              <source srcset="./img/blog3.webp" type="image/webp" />
+              <img loading="lazy" src="./img/blog3.jpg" alt="blog image" />
+            </picture>
           </div>
 
           <div class="entry__content">
@@ -110,7 +119,7 @@
         </article>
       </main>
       <aside class="sidebar">
-        <h3>Our Courses & WorkShop</h3>
+        <h3>Our Courses & Workshops</h3>
 
         <ul class="courses no-padding">
           <li class="widget-course">
@@ -159,5 +168,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modernizer.js"></script>
   </body>
 </html>
