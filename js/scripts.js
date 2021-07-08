@@ -10,9 +10,8 @@ const mensaje = document.querySelector("#message");
 const form = document.querySelector(".form");
 
 function leerTexto(e) {
-  /* console.log(e.target.value); */
   datos[e.target.id] = e.target.value;
-
+  //console.log(e.target.value);
   //console.log(datos);
 }
 
@@ -24,9 +23,9 @@ mensaje.addEventListener("input", leerTexto);
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 
-  const { nombre, email, mensaje } = datos;
+  const { name, email, message } = datos;
 
-  if (nombre == "" || email == "" || mensaje == "") {
+  if (name == "" || email == "" || message == "") {
     showAlert("Todos los campos son obligatorios", true);
     return;
   }
