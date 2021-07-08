@@ -1,11 +1,9 @@
-:root {
-  --headings: "Josefin Sans", sans-serif;
-  --paragraph: "Roboto Slab", serif;
+$paragraph: "Roboto Slab", serif;
+$headings: "Josefin Sans", sans-serif;
 
-  --primary-color: #45462a;
-  --secondary-color: #7e5920;
-  --complementary-color: #343330;
-}
+$primary-color: #45462a;
+$secondary-color: #7e5920;
+$complementary-color: #343330;
 
 html {
   box-sizing: border-box;
@@ -19,7 +17,7 @@ html {
 }
 
 body {
-  font-family: var(--paragraph);
+  font-family: $paragraph;
   font-size: 1.6rem;
   line-height: 2;
 }
@@ -40,7 +38,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: var(--headings);
+  font-family: $headings;
   line-height: 1.2;
 }
 
@@ -153,7 +151,7 @@ img {
 }
 
 .entry {
-  border-bottom: 0.2rem solid var(--complementary-color);
+  border-bottom: 0.2rem solid $complementary-color;
   margin-bottom: 2rem;
 
   &:last-of-type {
@@ -164,7 +162,7 @@ img {
 
 .button {
   display: block;
-  font-family: var(--headings);
+  font-family: $headings;
   color: #ffffff;
   text-align: center;
   padding: 1rem 3rem;
@@ -186,11 +184,11 @@ img {
 }
 
 .button--primary {
-  background-color: var(--primary-color);
+  background-color: $primary-color;
 }
 
 .button--secondary {
-  background-color: var(--secondary-color);
+  background-color: $secondary-color;
 }
 
 /* Index Courses */
@@ -198,7 +196,7 @@ img {
   list-style: none;
 
   .widget-course {
-    border-bottom: 0.1rem solid var(--complementary-color);
+    border-bottom: 0.1rem solid $complementary-color;
     margin-bottom: 2rem;
     &:last-of-type {
       border: none;
@@ -212,7 +210,7 @@ img {
   }
 
   .widget-course__label {
-    font-family: var(--headings);
+    font-family: $headings;
     font-weight: 700;
   }
 
@@ -226,7 +224,7 @@ img {
 .footer {
   margin-top: 2rem;
   padding-bottom: 2rem;
-  background-color: var(--complementary-color);
+  background-color: $complementary-color;
 }
 
 /* About us */
@@ -243,7 +241,7 @@ img {
 
 .course {
   padding: 3rem 0;
-  border-bottom: 1px solid var(--complementary-color);
+  border-bottom: 1px solid $complementary-color;
 
   &:last-of-type {
     border: none;
@@ -254,7 +252,7 @@ img {
   }
 
   .course__label {
-    font-family: var(--headings);
+    font-family: $headings;
     font-weight: 700;
   }
 
@@ -282,21 +280,21 @@ img {
   background-color: rgb(185, 0, 0);
   text-align: center;
   padding: 1rem;
-  color: var(--blanco);
+  color: white;
   text-transform: uppercase;
 }
 .correct {
   background-color: rgb(74, 185, 0);
   text-align: center;
   padding: 1rem;
-  color: var(--blanco);
+  color: white;
   text-transform: uppercase;
 }
 
 /* Formulary */
 
 .form {
-  background-color: var(--complementary-color);
+  background-color: $complementary-color;
   margin: -5rem auto 0 auto;
   width: 95%;
   padding: 5rem;
@@ -316,14 +314,14 @@ img {
 
   .field__label {
     flex: 0 0 9rem;
-    font-family: var(--headings);
+    font-family: $headings;
     text-align: right;
     color: #ffffff;
   }
 
   .field__input {
     flex: 1;
-    border: 1px solid var(--complementary-color);
+    border: 1px solid $complementary-color;
   }
 
   .field__input--textarea {
