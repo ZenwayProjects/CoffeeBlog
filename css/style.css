@@ -293,6 +293,22 @@ img {
   height: 40rem;
 }
 
+.error {
+  background-color: #b90000;
+  text-align: center;
+  padding: 1rem;
+  color: var(--blanco);
+  text-transform: uppercase;
+}
+
+.correct {
+  background-color: #4ab900;
+  text-align: center;
+  padding: 1rem;
+  color: var(--blanco);
+  text-transform: uppercase;
+}
+
 /* Formulary */
 .form {
   background-color: var(--complementary-color);
